@@ -1,4 +1,4 @@
-Lista de comandos
+\_Lista de comandos_
 
 #!/usr/bin/perl -w –> interpretador/compilador para sistemas UNIX, também conhecido como “shebang” informando como o Sistema operacional deveria processar um determinado script.
 
@@ -7,8 +7,6 @@ print –> Exibir alguma mensagem ou dado na tela.
 chomp() –> remove o caractere especial “\n” .
 
 use –> permite o carregamento de módulos do perl, como o “use strict” interrompe um erro do código e o “use warning” informa erros dos scripts, mas mantém a execução. Ambos podem ser usados juntos.
-
-length –> retornar a quantidade de caracteres de uma string, incluindo os espaços.
 
 <STDIN> -> Operador diamante para indicar onde o script deve receber algum dado.
 
@@ -60,4 +58,19 @@ if -> Significa “se”, permite que blocos de condicionais sejam testados.
 else -> Significa “outro”, permite que se nenhum bloco de condicional foi comprovado, else será o bloco executado.
 
 elsif -> Significa “else+if”, permite que uma nova condição seja testada caso a anterior não for comprovada.
+
+
+Função com Strings:
+
+lc -> abreviação do inglês "lower case", significa letras minúsculas. Exemplo "print lc $string".
+
+uc -> abreviação do inglês "upper case", significa letras maiúsculas. Exemplo "print uc $sting".
+
+length –> retornar a quantidade de caracteres de uma string, incluindo os espaços.
+
+index -> retonar um número inteiro relacionado a posição de uma string. Lembrando que a contagem começa do zero.
+
+substr -> realiza cortes na string de acordo com o selecionado "substr(nome da variável ou string entre aspas, posição de início do corte, tamanho do corte, string entre aspas para substituição). Lembrando que nem todas essas funções são obrigatorias para uso.
+
+
 
