@@ -1,17 +1,18 @@
-\**Lista de comandos**
+LISTA DE COMANDOS:
 
 #!/usr/bin/perl -w –> interpretador/compilador para sistemas UNIX, também conhecido como “shebang” informando como o Sistema operacional deveria processar um determinado script.
 
 print –> Exibir alguma mensagem ou dado na tela.
 
-chomp() –> remove o caractere especial “\n” .
+chomp –> remove o caractere especial “\n” .
 
 use –> permite o carregamento de módulos do perl, como o “use strict” interrompe um erro do código e o “use warning” informa erros dos scripts, mas mantém a execução. Ambos podem ser usados juntos.
 
 <STDIN> -> Operador diamante para indicar onde o script deve receber algum dado.
 
+system -> serve para aplicar funções nativas do sistema operacional, como por exemplo funções do terminal.
 
-Operadores relacionais:
+OPERADORES RELACIONAIS:
 
 = -> Operador de atribuição. Válido para dados de quaisquer tipos.
 
@@ -42,7 +43,7 @@ ge -> Verifica se a ordenação de uma string é superior ou igual a outra. Sign
 . -> Operador de concatenação de strings.
 
 
-Operadores lógicos:
+OPERADORES LÓGICOS:
 
 and ou && -> Significa “e” para validar duas condições verdadeiras.
 
@@ -51,7 +52,7 @@ or ou || -> Significa “ou” para validar pelo menos uma das condições.
 ! -> Significa “não” para validar se uma condição for falsa.
 
 
-Operador condicional:
+OPERADORES CONDICIONAIS:
 
 if -> Significa “se”, permite que blocos de condicionais sejam testados.
 
@@ -60,7 +61,7 @@ else -> Significa “outro”, permite que se nenhum bloco de condicional foi co
 elsif -> Significa “else+if”, permite que uma nova condição seja testada caso a anterior não for comprovada.
 
 
-Função com Strings:
+FUNÇÃO PARA STRINGS:
 
 lc -> abreviação do inglês "lower case", significa letras minúsculas. Exemplo "print lc $string".
 
@@ -73,4 +74,15 @@ index -> retonar um número inteiro relacionado a posição de uma string. Lembr
 substr -> realiza cortes na string de acordo com o selecionado "substr(nome da variável ou string entre aspas, posição de início do corte, tamanho do corte, string entre aspas para substituição). Lembrando que nem todas essas funções são obrigatorias para uso.
 
 
+LAÇOS DE REPETIÇÃO:
+
+while -> significa "enquanto", irá realizar uma determinada condição enquanto ela for válida. No laço while a condição é mais importante do que a execução do código.
+
+do...while -> significa "faça...enquanto", semelhante a while, porém a execução do código é mais importante do que a condição, ou seja, irá executar pelo menos uma vez mesmo que a condição seja falsa.
+
+for -> significa "para", permite que uma variável seja testada e podendo incrementar a cada interação.
+
+last -> significa "último" e serve para encerrar um laço de repetição de acordo com alguma condição.
+
+next -> significa "próximo" e serve para processiguir para a próxima interação de acordo com alguma condição.
 
