@@ -1,9 +1,0 @@
-2 - O algoritmo pode ter a função for com next ou mesmo usando condicionais com print para os multiplos de 3 ou 5.
-
-3 - coloque toda a calculadora dentro da função "while", a condicional de 0 ou 1. Uma delas irá levar para a calculradora e a outra irá encerrar. Lembre adicionar o script perguntando ao usúario se ele deseja continuar e um operador diamante para receber a resposta.
-
-4 - Use a função "while" com a condicional onde o contador é menor ou igual ao tempo. Dentro da função basca aplica a fórmula desejada com o "print".
-
-5 - Utilize qualquer uma das sequências disponíveis na pasta do github. Para resolver basta aplicar a função "For". Não se preocupe em respeitar os outros códons, tente fazer isso depois que vc conseguir finalizar o primeiro programa. Para retonar os aminoácidos, vc terá que usar uma condicional para cada um. E para resolver o erro do tamanho da sequência, basta criar uma condicional que irá levar ao script anterior ou para o aviso de erro.
-
-6 - Use um laço de repetição para receber os valores digitados pelo usúario. Também é possível usar o "last" para retornar os avisos de onda de calor ou "next" caso não esteja dentro do desejado. Contadores são extremamente importantes nessa questão.
