@@ -12,6 +12,7 @@ use –> permite o carregamento de módulos do perl, como o “use strict” int
 
 system -> serve para aplicar funções nativas do sistema operacional, como por exemplo funções do terminal.
 
+
 OPERADORES RELACIONAIS:
 
 = -> Operador de atribuição. Válido para dados de quaisquer tipos.
@@ -73,6 +74,8 @@ index -> retonar um número inteiro relacionado a posição de uma string. Lembr
 
 substr -> realiza cortes na string de acordo com o selecionado "substr(nome da variável ou string entre aspas, posição de início do corte, tamanho do corte, string entre aspas para substituição). Lembrando que nem todas essas funções são obrigatorias para uso.
 
+replicação -> ("string")x4 irá repetir a string de acordo com a quatidade de vezes desejada, nesse exemplo irá repetir 4 vezes.
+
 
 LAÇOS DE REPETIÇÃO:
 
@@ -82,7 +85,77 @@ do...while -> significa "faça...enquanto", semelhante a while, porém a execuç
 
 for -> significa "para", permite que uma variável seja testada e podendo incrementar a cada interação.
 
+foreach -> semelhante a função anterior, porém utilizada para arrays e hases.
+
 last -> significa "último" e serve para encerrar um laço de repetição de acordo com alguma condição.
 
 next -> significa "próximo" e serve para processiguir para a próxima interação de acordo com alguma condição.
+
+
+INPUT/OUTPUT
+
+open(arquivo, modo de abertura, nome do arquivo) -> Abrir arquivo desejado, caso não esteja na mesma pasta, indicar o diretório.
+
+close(arquivo) -> fecha o arquivo aberto no script.
+
+< -> modo de abertura para leitura. Não cria arquivo nem sobrepõe outro.
+
+> -> modo de abertura para escrita. Cria arquivo novor e sobrepõe outro com o mesmo nome..
+
+>> -< modo de abertura para incrementar. cria um novo arquivo, caso tenha o mesmo nome que outro arquivo, irá adicioanr as informaçõe novas.
+
++< -> modo de abertura para leitura/escrita. Não cria novo arquivo nem sobrepõe outro.
+
++> -> modo de abertura para leitura/escrita. Cria novo arquivo e sobrepõe outro com o mesmo nome.
+
++>> -> modo de abertura para leitura/escrita incremental. cria novo arquivo e adiciona a outro com o mesmo nome.
+
+die -> função opcional para indicar erro de abertura de arquivo.
+
+
+ARRAYS
+
+@array = () -> são estrutuas que podem armazedas diversos elementos, sendo eles strings, inteiros, floats e até outros arrays. Elementos devem ser separados por vírgula.
+
+$array[index] -> função para acessar um elemento dentro de uma array de acordo com a posição indicada.
+
+pop() -> remove o último elemtendo da array e retorna ele.
+
+push() -> insere um elemento em uma array para o final da da estrutura.
+x
+shift() -> remove o primeiro elemento da array e retonar ele.
+
+unshift() -> adiciona um elemento ao início da array.
+
+$variavel = @array -> cria uma váriavel com o número de elementos da array.
+
+$variavel = "@array" -> cria uma váriavel com os elementos agrupados da array.
+
+sort(@array) -> organiza a array em ordem númerica ou alfabetica.
+
+reverse -> retonar a array invertida.
+
+(my $primeiro, my $segundo) = @array -> cria duas váriaveis cada uma com o primeiro e o segundo elemento da array.
+
+(my $primeiro, my @outros) = @array -> cria uma váriavel com o primeiro e uma array com os outros elementos.
+
+
+HASHES
+
+%hashe = () -> são arrays associativos ou dicionários, contém divesos elementos chamados de valores que são relacionados as repectivas chaves.
+
+$hashe{key} = valor -> insere um valor e sua chave dentro de uma hashe como o mesmo nome.
+
+delete $hashe{key} -> "remove" um valor de uma hashe.
+
+$tamanho = keys %hashe -> cria uma váriavel com o número de chaves de uma hashe.
+
+scalar keys %hashe -> retonar o número de chaves de uma hashe.
+
+each -> retonar um array com o par de elemntos.
+
+
+SUBROTINA
+
+
 
