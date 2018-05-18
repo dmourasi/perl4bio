@@ -152,8 +152,11 @@ $tamanho = keys %hashe -> cria uma váriavel com o número de chaves de uma hash
 
 scalar keys %hashe -> retonar o número de chaves de uma hashe.
 
+scalar values %hashe -> retonar o número de valores de uma hashe.
+
 each -> retonar um array com o par de elemntos.
 
+map -> 
 
 SUBROTINA
 
