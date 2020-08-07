@@ -156,9 +156,7 @@ scalar values %hashe -> retonar o número de valores de uma hashe.
 
 each -> retonar um array com o par de elemntos.
 
-map -> 
-
-SUBROTINA
+map -> avalia cada elemento de uma lista
 
 
 
